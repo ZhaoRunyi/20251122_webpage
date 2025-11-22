@@ -47,38 +47,47 @@
     <h1>Sim2Real VLA Rebuttal Video Demonstration</h1>
 
     <!-- Reviewer_1 -->
-    <h2>Reviewer 1</h2>
+    <h2>For Reviewer MEpH</h2>
+    <p>Reviewer MEpH Question 1: <q><i>Have the authors considered evaluating their approach on different robot embodiments to assess generalization across hardware platforms?</i></q></p>
+    <p>Reviewer MEpH Question 2: <q><i>Have the authors considered testing the method on deformable object manipulation tasks to further demonstrate robustness and versatility</i></q></p>
+    On-going real2sim projection and training data preparing process of humanoid robot dextraxous hands deformable doll grasping task：
 
     <div class="video-block">
         <video controls>
             <source src="./webpage_video/Reviewer_1/grasp_doll_real.mp4" type="video/mp4">
         </video>
-        <div class="caption">grasp_doll_real</div>
+        <div class="caption">Collecting teleoperated doll grasping trajectories for real2sim projection.</div>
     </div>
 
     <div class="video-block">
         <video controls>
             <source src="./webpage_video/Reviewer_1/grasp_doll_sim.mp4" type="video/mp4">
         </video>
-        <div class="caption">grasp_doll_sim</div>
+        <div class="caption">Real2sim constructed environments and scaled trajectories.</div>
     </div>
+
+    <h2>For Reviewer 6zd7</h2>
+    <p>Reviewer 6zd7 Weakness 2: <q><i>In the experimental section, most evaluated tasks are compositions of pick-and-place style atomic tasks. While the results clearly highlight the advantage of hierarchical planning in long-horizon settings, the diversity of atomic-level skills remains limited.</i></q></p>
+    On-going simulated environment constructing and trainigh data collecting process of humanoid robot tool using (scoop ice) task:
 
     <div class="video-block">
         <video controls>
             <source src="./webpage_video/Reviewer_1/scoop_ice_sim.mp4" type="video/mp4">
         </video>
-        <div class="caption">scoop_ice_sim</div>
+        <div class="caption">Scoop ice environment setup.</div>
     </div>
 
 
     <!-- Reviewer_4 -->
-    <h2>Reviewer 4</h2>
+    <h2>Reviewer 84R9</h2>
+    <p>Reviewer 84R9 Weakness 4 & Question 4: <q><i>Unclear advantage over non-VLA affordance→policy pipelines (e.g., AnyGrasp-style). The paper motivates a hierarchical VLA backbone but does not isolate why VLA is needed once an affordance chain is available"</i></q></p>:
+    This video documents an attempt to execute a task by directly implementing the actions suggested by a 2D affordance map, and demonstrates that this approach fails due to unavoidable prediciton errors.
 
     <div class="video-block">
         <video controls>
             <source src="webpage_video/Reviewer_4/pure_affordance_execution.mp4" type="video/mp4">
         </video>
-        <div class="caption">pure_affordance_execution</div>
+        <div class="caption">2D affordance execution failure</div>
     </div>
 
 </body>
