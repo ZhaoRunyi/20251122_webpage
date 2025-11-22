@@ -7,23 +7,25 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 40px auto;
             background: #fafafa;
-            font-size: 18px; /* 增加基础字体大小 */
-            line-height: 1.6; /* 增加行高提高可读性 */
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 1000px; /* 限制页面最大宽度 */
+            padding: 0 20px; /* 在小屏幕上添加内边距 */
         }
         h1 {
             margin-bottom: 25px;
             text-align: center;
-            font-size: 32px; /* 增加主标题大小 */
+            font-size: 32px;
         }
         h2 {
             margin-top: 50px;
             color: #333;
-            font-size: 26px; /* 增加副标题大小 */
+            font-size: 26px;
         }
         p {
-            font-size: 18px; /* 增加段落字体大小 */
+            font-size: 18px;
             margin-bottom: 20px;
         }
         .video-block {
@@ -35,8 +37,8 @@
             text-align: center;
         }
         video {
-            width: 640px;
-            max-width: 100%;
+            width: 100%; /* 让视频填充容器宽度 */
+            max-width: 640px; /* 但不超过640px */
             margin-top: 15px;
             border-radius: 6px;
             display: block;
@@ -45,12 +47,12 @@
         }
         .caption {
             margin-top: 15px;
-            font-size: 18px; /* 增加说明文字大小 */
+            font-size: 18px;
             font-weight: 500;
             color: #444;
         }
         q {
-            font-size: 18px; /* 增加引用文字大小 */
+            font-size: 18px;
             font-style: italic;
         }
     </style>
@@ -63,7 +65,7 @@
     <h2>For Reviewer MEpH</h2>
     <p>Reviewer MEpH Question 1: <q><i>Have the authors considered evaluating their approach on different robot embodiments to assess generalization across hardware platforms?</i></q></p>
     <p>Reviewer MEpH Question 2: <q><i>Have the authors considered testing the method on deformable object manipulation tasks to further demonstrate robustness and versatility</i></q></p>
-    <p>Videos below demostrate on-going real2sim projection and training data preparing process of humanoid robot dextraxous hands deformable doll grasping task：</p>
+    <p>Videos below demonstrate on-going real2sim projection and training data preparing process of humanoid robot dextraxous hands deformable doll grasping task：</p>
 
     <div class="video-block">
         <video controls>
@@ -81,7 +83,7 @@
 
     <h2>For Reviewer 6zd7</h2>
     <p>Reviewer 6zd7 Weakness 2: <q><i>In the experimental section, most evaluated tasks are compositions of pick-and-place style atomic tasks. While the results clearly highlight the advantage of hierarchical planning in long-horizon settings, the diversity of atomic-level skills remains limited.</i></q></p>
-    <p>This video presents on-going simulated environment constructing and trainigh data collecting process of humanoid robot tool using (scoop ice) task:</p>
+    <p>This video presents on-going simulated environment constructing and training data collecting process of humanoid robot tool using (scoop ice) task:</p>
 
     <div class="video-block">
         <video controls>
@@ -93,7 +95,7 @@
     <!-- Reviewer_4 -->
     <h2>For Reviewer 84R9</h2>
     <p>Reviewer 84R9 Weakness 4 & Question 4: <q><i>Unclear advantage over non-VLA affordance→policy pipelines (e.g., AnyGrasp-style). The paper motivates a hierarchical VLA backbone but does not isolate why VLA is needed once an affordance chain is available"</i></q></p>
-    <p>This video documents an attempt to execute a task by directly implementing the actions suggested by a 2D affordance map, and demonstrates that this approach fails due to unavoidable prediciton errors.</p>
+    <p>This video documents an attempt to execute a task by directly implementing the actions suggested by a 2D affordance map, and demonstrates that this approach fails due to unavoidable prediction errors.</p>
 
     <div class="video-block">
         <video controls>
